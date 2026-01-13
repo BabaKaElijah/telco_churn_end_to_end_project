@@ -1,7 +1,7 @@
 import os
 import pandas as pd
-from logger import get_logger
-from exception import CustomException
+from src.logger import get_logger
+from src.exception import CustomException
 
 logger = get_logger(__name__)
 

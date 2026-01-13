@@ -1,8 +1,8 @@
 import pandas as pd
 import joblib
 from tensorflow.keras.models import load_model
-from logger import get_logger
-from exception import CustomException
+from src.logger import get_logger
+from src.exception import CustomException
 
 logger = get_logger(__name__)
 

@@ -3,10 +3,10 @@ import joblib
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
-from logger import get_logger
-from exception import CustomException
-from data_ingestion import load_data
-from data_transformation import preprocess_data
+from src.logger import get_logger
+from src.exception import CustomException
+from src.data_ingestion import load_data
+from src.data_transformation import preprocess_data
 
 logger = get_logger(__name__)
 

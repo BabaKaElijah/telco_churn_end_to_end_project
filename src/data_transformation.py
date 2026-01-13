@@ -3,8 +3,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 import joblib
 import os
-from logger import get_logger
-from exception import CustomException
+from src.logger import get_logger
+from src.exception import CustomException
 
 logger = get_logger(__name__)
 
