@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# Build and cache
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Optional. Keep model files if you want them in GitHub
+# artifacts/
