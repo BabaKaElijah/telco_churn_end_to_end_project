@@ -31,3 +31,4 @@ jobs:
       - name: Smoke test. Load artifacts
         run: |
           python -c "from src.predict_pipeline import load_artifacts; load_artifacts(); print('Artifacts loaded')"
+
