@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from predict_pipeline import load_artifacts, predict_churn
+from src.predict_pipeline import load_artifacts, predict_churn
 
 st.title("Telco Churn Prediction")
 

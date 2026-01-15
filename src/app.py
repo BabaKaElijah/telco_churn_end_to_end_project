@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import os
-from predict_pipeline import load_artifacts, predict_churn
+from src.predict_pipeline import load_artifacts, predict_churn
 import pandas as pd
 
 # Set templates folder explicitly

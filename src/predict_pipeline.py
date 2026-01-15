@@ -1,8 +1,8 @@
 import pandas as pd
 import joblib
 from tensorflow.keras.models import load_model
-from logger import get_logger
-from exception import CustomException
+from src.logger import get_logger
+from src.exception import CustomException
 
 logger = get_logger(__name__)
 
@@ -72,7 +72,7 @@ def predict_churn(df: pd.DataFrame, model, scaler, training_columns):
 
 
 if __name__ == "__main__":
-    from data_ingestion import load_data
+    from src.data_ingestion import load_data
 
     # Load model, scaler, and training columns
     model, scaler, training_columns = load_artifacts()
