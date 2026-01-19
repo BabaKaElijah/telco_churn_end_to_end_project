@@ -2,7 +2,7 @@
 
 # Telco Churn Prediction (Deep Learning)
 
-Predict customer churn for a telecom dataset using a neural network, with both a Flask web form and a Streamlit dashboard. This project includes data preprocessing, model training, artifact management, and containerized deployment.
+Predict customer churn for a telecom dataset using a neural network, with both a FastAPI web form and a Streamlit dashboard. This project includes data preprocessing, model training, artifact management, and containerized deployment.
 
 ## Why it matters
 Churn prediction helps businesses focus retention efforts on high-risk customers. This project demonstrates an end-to-end ML workflow from raw data to interactive inference apps.
@@ -11,13 +11,13 @@ Churn prediction helps businesses focus retention efforts on high-risk customers
 - End-to-end pipeline: data ingestion, preprocessing, training, and inference.
 - Neural network model (TensorFlow/Keras) with saved artifacts.
 - Two user interfaces:
-  - Flask form UI at port 5000.
+  - FastAPI form UI at port 5000.
   - Streamlit dashboard at port 8501.
 - Dockerized setup for reproducible runs.
 
 ## Tech stack
 - Python, TensorFlow/Keras, scikit-learn, pandas
-- Flask, Streamlit
+- FastAPI, Streamlit
 - Docker, docker-compose
 
 ## Project structure
@@ -26,7 +26,7 @@ churn_deep_learning/
   artifacts/                 # Saved model, scaler, and training columns
   data/                      # Dataset (telco_churn.csv)
   src/
-    app.py                   # Flask app
+    app.py                   # FastAPI app
     streamlit_app.py         # Streamlit app
     data_ingestion.py        # Load dataset
     data_transformation.py   # Preprocessing + scaler
@@ -42,11 +42,11 @@ churn_deep_learning/
 ```
 docker-compose up --build
 ```
-- Flask UI: http://127.0.0.1:5000/
+- FastAPI UI: http://127.0.0.1:5000/
 - Streamlit UI: http://127.0.0.1:8501/
 
 ## Screenshots
-![Flask UI](docs/screenshots/flask-ui.png)
+![FastAPI UI](docs/screenshots/flask-ui.png)
 ![Streamlit UI](docs/screenshots/streamlit-ui.png)
 
 ## Local setup (without Docker)
@@ -62,9 +62,9 @@ python -m src.model_pipeline
 ```
 This writes artifacts to `artifacts/` (model, scaler, training columns).
 
-### Run Flask
+### Run FastAPI
 ```
-python -m src.app
+python -m uvicorn src.app:app --host 0.0.0.0 --port 5000
 ```
 Then open http://127.0.0.1:5000/
 

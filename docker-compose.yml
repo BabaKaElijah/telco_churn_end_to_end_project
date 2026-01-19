@@ -1,5 +1,5 @@
 services:
-  flask:
+  fastapi:
     build: .
     ports:
       - "5000:5000"
