@@ -1,3 +1,5 @@
+[![CI](https://github.com/BabaKaElijah/telco_churn_end_to_end_project/actions/workflows/ci.yml/badge.svg)](https://github.com/BabaKaElijah/telco_churn_end_to_end_project/actions/workflows/ci.yml)
+
 # Telco Churn Prediction (Deep Learning)
 
 Predict customer churn for a telecom dataset using a neural network, with both a Flask web form and a Streamlit dashboard. This project includes data preprocessing, model training, artifact management, and containerized deployment.
